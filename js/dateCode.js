@@ -54,7 +54,7 @@ function getValues() {
 function addNewTime(ele) {
 	var id = ele.id ;
 	var u = id.split("_");
-	var tmpDiv = "<input type='text' placeholder='Add new time' id='time_" + localStorage.getItem("counterTimes") + "' /><button class='btn btn-sm btn-danger responsive-width' id='btn_" + localStorage.getItem("counterButtons") + "' onclick='deleteElement(this)'' type='button'>Delete Time</button>";
+	var tmpDiv = "<input type='text' placeholder='Add new time' id='time_" + localStorage.getItem("counterTimes") + "' /><button class='btn btn-sm btn-danger responsive-width' style='font-size:1vw' id='btn_" + localStorage.getItem("counterButtons") + "' onclick='deleteElement(this)'' type='button'>Delete Time</button>";
 	document.getElementById("dates_" + u[1]).insertAdjacentHTML('beforeEnd',tmpDiv);
 	counterTimes += 1;
 	counterButtons += 1;
@@ -90,6 +90,6 @@ function addNewDate() {
 	localStorage.setItem("counterDateButtons", counterDateButtons);
 	localStorage.setItem("counterNewTimeButtons", counterNewTimeButtons);
 	var container = document.createElement("div");
-	container.innerHTML = "<div id = 'dates_" + localStorage.getItem("counterDates") + "'><input type='date' class='form-control input-sm' /><button class='btn btn-sm btn-danger responsive-width' id='datbtn_" + localStorage.getItem("counterDateButtons") + "' onclick='deleteDate(this)' type='button'>Delete Date</button><button type='button' id='addTime_" + localStorage.getItem("counterDates") + "' onclick='addNewTime(this)' class='btn btn-success btn-sm responsive-width'>Add new time</button></div>";
+	container.innerHTML = "<div id = 'dates_" + localStorage.getItem("counterDates") + "'><input type='date' class='form-control input-sm' /><button class='btn btn-sm btn-danger responsive-width' style='font-size:1vw' id='datbtn_" + localStorage.getItem("counterDateButtons") + "' onclick='deleteDate(this)' type='button'>Delete Date</button><button type='button' id='addTime_" + localStorage.getItem("counterDates") + "' onclick='addNewTime(this)' class='btn btn-success btn-sm responsive-width' style='font-size:1vw'>Add new time</button></div>";
 	document.getElementById("form").appendChild(container); 
 }

@@ -1,0 +1,4 @@
+- Prerequisites to run this program
+
+	* A browser in order open the .html file.
+	* Libraries of Bootstrap(no install is required as long the user has in the css and js files the path of libraries)

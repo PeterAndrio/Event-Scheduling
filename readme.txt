@@ -2,7 +2,7 @@ Event Scheduling Platform.
 
 	Use Case Scenario: User wants to arrange an event.
 	
-	1st step: Then, he opens a page with all possible dates and hours in which the event will take place.
+	Then, he opens a page with all possible dates and hours in which the event will take place.
 	
 	At last the interested audience insert their name and the hours/days they would like to attend.
 	

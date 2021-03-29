@@ -54,7 +54,7 @@ function getValues() {
 function addNewTime(ele) {
 	var id = ele.id ;
 	var u = id.split("_");
-	var tmpDiv = "<input type='text' placeholder='Add new time' id='time_" + localStorage.getItem("counterTimes") + "' /><button class='btn btn-sm btn-danger responsive-width' style='font-size:1vw' id='btn_" + localStorage.getItem("counterButtons") + "' onclick='deleteElement(this)'' type='button'>Delete Time</button>";
+	var tmpDiv = "<input type='time' placeholder='Add new time' id='time_" + localStorage.getItem("counterTimes") + "' /><button class='btn btn-sm btn-danger responsive-width' style='font-size:1vw' id='btn_" + localStorage.getItem("counterButtons") + "' onclick='deleteElement(this)'' type='button'>Delete Time</button>";
 	document.getElementById("dates_" + u[1]).insertAdjacentHTML('beforeEnd',tmpDiv);
 	counterTimes += 1;
 	counterButtons += 1;

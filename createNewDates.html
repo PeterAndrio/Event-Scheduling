@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+
+			<h1 class="blue-col" >Choose your dates <span class="text-uppercase step-progress">Step 2 of 2</span></h1>
+			<form id = "form">
+				<div id="dates_0">
+					<input type="date" class="form-control input-sm" /><button class="btn btn-sm btn-danger responsive-width" id="datbtn_0" onclick="deleteDate(this)" type="button">Delete Date</button><button type="button" id="addTime_0" onclick="addNewTime(this)" class="btn btn-success btn-sm responsive-width">Add new time</button>
+				</div>
+			</form>
+
+			<button type="button" class="btn btn-success btn-sm responsive-width" onclick="addNewDate()">Add new date</button>
+			<br><br>
+			<a class="btn btn-info btn-lg active responsive-width" id="next" onclick="getValues()" role="button">Next</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dateCode.js"></script>
+</body>
+</html>

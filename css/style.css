@@ -1,0 +1,59 @@
+.inner-addon {
+	position: relative;
+}
+
+body {
+	background-image: url("../polygon.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	margin: 3px auto 0;
+	position: relative;
+}
+
+h1 {
+	word-wrap:break-word;
+}
+
+.responsive-width {
+	font-size: 2vw;
+}
+
+form :invalid {
+	background: red;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+#loginForm .has-error .control-label,
+#loginForm .has-error .help-block,
+#loginForm .has-error .form-control-feedback {
+	color: #f39c12;
+}
+
+#loginForm .has-success .control-label,
+#loginForm .has-success .help-block,
+#loginForm .has-success .form-control-feedback {
+	color: #18bc9c;
+}
+
+body {
+	margin: 10px;
+}
+
+.glyphicon {
+	font-size: 15px;
+}
